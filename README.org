@@ -1,0 +1,5 @@
+* Zu-Lab webpage source
+Welcome to Zu lab's github pages!
+
+The template is from [[http://deanattali.com/beautiful-jekyll][beutiful-jekyll]]. We also learn a lot from Drs [[https://github.com/zhou-lab/zhou-lab.github.io][Wanding Zhou]] and [[https://github.com/sushang-thu/sushanglab.github.io][Shang Su]]'s lab github repositories.
+

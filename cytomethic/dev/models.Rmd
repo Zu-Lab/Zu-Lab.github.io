@@ -1,0 +1,106 @@
+---
+title: "CytoMethIC models"
+date: "`r BiocStyle::doc_date()`"
+package: askme
+output: BiocStyle::html_document
+fig_width: 6
+fig_height: 5
+vignette: >
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteIndexEntry{"1. models"}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r message=FALSE, warning=FALSE}
+library(sesame)
+library(CytoMethIC)
+library(dplyr)
+```
+
+```{r}
+model_home = "https://github.com/zhou-lab/CytoMethIC_models/raw/main/models"
+cmi_checkVersion()
+```
+
+The mature CytoMethIC models are hosted in ExperimentHub. This package also
+supports using models from https://github.com/zhou-lab/CytoMethIC_models, which
+will host the most frequently updated public repository of our lab's classifiers.
+
+```{r cyto3, result="asis", echo=FALSE}
+library(knitr)
+kable(cmi_models[, c("EHID", "PredictionLabelDescription", "Title")],
+    caption = "CytoMethIC supported models"
+)
+```
+
+# Gender
+
+The gender/sex model is based on X chromosome inactivation sites, including both hyper
+and hypomethylation on inactive X.
+
+```{r model_sex, message=TRUE}
+betas_hm450 = sesameDataGet("HM450.1.TCGA.PAAD")$betas
+cmi_model = readRDS(url(paste0(model_home, "/Sex2_HM450.rds")))
+cmi_predict(betas_hm450, cmi_model)
+kable(table(cmi_model$stats$additional_info, cmi_model$stats$truth))
+```
+
+# Ethnicity
+
+The below snippet shows a demonstration of the cmi_classify function working to
+predict the ethnicity of the patient.
+
+```{r model_ethnicity1, message=FALSE}
+betas_hm450 = sesameDataGet("HM450.1.TCGA.PAAD")$betas
+cmi_model = ExperimentHub()[["EH8421"]]
+cmi_predict(betas_hm450, cmi_model)
+```
+
+```{r model_ethnicity2}
+betas_epicv2 = openSesame(sesameDataGet("EPICv2.8.SigDF")[[1]])
+cmi_model = readRDS(url(paste0(model_home, "/Race3_rfcTCGA_InfHum3.rds")))
+cmi_predict(betas_epicv2, cmi_model, lift_over=TRUE)
+```
+
+# Mitotic Index
+
+```{r replitali}
+cmi_model = readRDS(url(paste0(model_home, "/RepliTali_EPIC.rds")))
+betas_hm450 = sesameDataGet("HM450.1.TCGA.PAAD")$betas
+cmi_predict(betas_hm450, cmi_model)
+
+
+cmi_model = readRDS(url(paste0(model_home, "/TumorPurity_HM450.rds")))
+betas_hm450 = sesameDataGet("HM450.1.TCGA.PAAD")$betas
+cmi_predict(betas_hm450, cmi_model)
+
+
+```
+
+# Cancer Classification Models
+
+## CNS Cancer
+
+```{r message=FALSE}
+betas_hm450 = sesameDataGet("HM450.1.TCGA.PAAD")$betas
+cmi_model = ExperimentHub()[["EH8396"]]
+## cmi_model = readRDS(url(paste0(model_home, "/CancerType33_rfcTCGA_InfHum3.rds")))
+cmi_predict(betas_hm450, cmi_model, lift_over=TRUE)
+```
+
+# Cancer Phenotyping Models
+
+## Cancer Cell of origin
+
+The below snippet shows a demonstration of the cmi_classify function working to
+predict the cell of origin of the cancer.
+
+```{r cyto7, message=FALSE}
+betas_hm450 = sesameDataGet("HM450.1.TCGA.PAAD")$betas
+cmi_model = ExperimentHub()[["EH8423"]]
+cmi_predict(betas_hm450, cmi_model)
+```
+
+```{r}
+sessionInfo()
+```
