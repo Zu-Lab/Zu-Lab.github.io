@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>ZU_LAB@Fudan|Team</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- FONTS -->
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,400italic,500,700'>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel='stylesheet' href='../../css/global.css'>
+    <link rel='stylesheet' href='css/structure.css'>
+    <link rel='stylesheet' href='css/simple.css'>
+    <link rel='stylesheet' href='css/custom.css'>
+
+    <style>
+      /* Team member card styles */
+      .team-member-card {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+      }
+      
+      .member-photo {
+        width: 350px;
+        min-width: 250px;
+        height: 250px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .member-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .member-photo-placeholder {
+        color: #999;
+        font-size: 16px;
+      }
+      
+      .member-info {
+        flex: 1;
+      }
+      
+      .member-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 0;
+      }
+      
+      .member-detail {
+        margin-bottom: 13px;
+        line-height: 1.6;
+        font-size: 16px;
+      }
+      
+      .member-detail-label {
+        font-weight: normal;
+      }
+      
+      .member-detail-value {
+        color: #333;
+      }
+      
+      @media (max-width: 768px) {
+        .team-member-card {
+          flex-direction: column;
+        }
+        
+        .member-photo {
+          width: 100%;
+          max-width: 250px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+
+</head>
+
+<body class="style-simple layout-full-width mobile-tb-left no-content-padding header-stack header-center minimalist-header sticky-white ab-hide subheader-both-center menuo-no-borders footer-copy-center">
+  <!-- Main Theme Wrapper -->
+  <div id="Wrapper">
+    <!-- Header Wrapper -->
+    <div id="Header_wrapper">
+      <!-- Header -->
+      <header id="Header">
+
+        <!-- Header -  Logo and Menu area -->
+        <div id="Top_bar">
+          <div class="container">
+            <div class="column one">
+              <div class="top_bar_left clearfix loading">
+
+                <!-- main caption -->
+                <div class="logo">
+                  <p class="zlab_caption">ZU LAB<br></p>
+                  <p>@Fudan University, School of Basic Medical Sciences</p>
+                </div>
+
+                <!-- Main menu-->
+                <div class="menu_wrapper">
+                  <nav id="menu" class="menu-main-menu-container">
+                    <ul id="menu-main-menu" class="menu">
+                      <li>
+                        <a href="../../index.html"><span>Home</span></a>
+                      </li>
+                      <li>
+                        <a href="publications.html"><span>Publications</span></a>
+                      </li>
+                      <li class="current_page_item">
+                        <a href="team.html"><span>Team</span></a>
+                      </li>
+                      <li>
+                        <a href="contact.html"><span>Contact</span></a>
+                      </li>
+                    </ul>
+                  </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                </div>
+                <!-- Secondary menu area - only for certain pages -->
+                <div class="secondary_menu_wrapper"></div>
+                <!-- Banner area - only for certain pages-->
+                <div class="banner_wrapper"></div>
+                <!-- Header Searchform area-->
+                <div class="search_wrapper">
+                  <form method="get" id="searchform" action="#">
+
+                    <input type="text" class="field" name="s" id="s" placeholder="Enter your search" />
+                    <input type="submit" class="submit flv_disp_none" value="" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--Subheader area - only for certain pages -->
+      <div id="Subheader">
+        <div class="container">
+          <div class="column one">
+            <h1 class="title">Team</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div id="Content">
+      <div class="content_wrapper clearfix">
+        <div class="sections_group">
+          <div class="entry-content">
+            <div class="section column-margin-30px" style="padding-top:40px; padding-bottom:40px; ">
+              <div class="section_wrapper clearfix">
+                <div class="items_group clearfix">
+
+              
+
+                  <!-- Member 1 -->
+                  <div class="column one column_column">
+                    <div class="column_attr">
+                      <div class="team-member-card">
+                        <!-- 左侧照片区域 -->
+                        <div class="member-photo">
+                          <!-- 如果有照片，使用下面的代码替换 -->
+                          <img src="images/member_photo/songpeng.jpg" alt="Songpeng Zu">
+                          <!-- 如果没有照片，使用下面的占位符 -->
+                          <!-- <div class="member-photo-placeholder">生活照</div> -->
+                        </div>
+                        <!-- 右侧信息区域 -->
+                        <div class="member-info">
+                          <h2 class="member-name">Songpeng Zu</h2>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Principal investigator</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Major:</span>
+                            <span class="member-detail-value">Epigenetics and statisitcal machine learning</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research area:</span>
+                            <span class="member-detail-value">Gene regulation programs in the mammalian brain</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Hobby:</span>
+                            <span class="member-detail-value">Playing soccer</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">E-mail:</span>
+                            <span class="member-detail-value"><a href="mailto:szu@fudan.edu.cn">szu@fudan.edu.cn</a></span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Website:</span>
+                            <span class="member-detail-value"><a href="https://beyondpie.github.io" target="_blank"> https://beyondpie.github.io</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>          
+                  
+                  
+
+                  <!-- Member 2 -->
+                  <div class="column one column_column">
+                    <div class="column_attr">
+                      <div class="team-member-card">
+                        <!-- 左侧照片区域 -->
+                        <div class="member-photo">
+                          <!-- 如果有照片，使用下面的代码替换 -->
+                          <img src="images/member_photo/shijia.jpg" alt="Shijia">
+                          <!-- 如果没有照片，使用下面的占位符 -->
+                          <!-- <div class="member-photo-placeholder">生活照</div> -->
+                        </div>
+                        <!-- 右侧信息区域 -->
+                        <div class="member-info">
+                          <h2 class="member-name">Shijia Guo</h2>
+                          <div class="member-detail">
+                            <span class="member-detail-label">PhD student</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Major:</span>
+                            <span class="member-detail-value">Bioinformatics</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research area:</span>
+                            <span class="member-detail-value">AI Multi-Omics, AI Medical Imaging</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Hobby:</span>
+                            <span class="member-detail-value">History</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">E-mail:</span>
+                            <span class="member-detail-value"><a href="mailto:sjguo25@m.fudan.edu.cn">sjguo25@m.fudan.edu.cn</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>       
+
+
+
+                  <!-- Member 3 -->
+                  <div class="column one column_column">
+                    <div class="column_attr">
+                      <div class="team-member-card">
+                        <!-- 左侧照片区域 -->
+                        <div class="member-photo">
+                          <!-- 如果有照片，使用下面的代码替换 -->
+                          <img src="images/member_photo/xuerong.jpg" alt="xuerong">
+                          <!-- 如果没有照片，使用下面的占位符 -->
+                          <!-- <div class="member-photo-placeholder">生活照</div> -->
+                        </div>
+                        <!-- 右侧信息区域 -->
+                        <div class="member-info">
+                          <h2 class="member-name">Xuerong Gu</h2>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research assistant</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Major:</span>
+                            <span class="member-detail-value">Medical Systems Biology</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research area:</span>
+                            <span class="member-detail-value">Transposon analysis</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Hobby:</span>
+                            <span class="member-detail-value">Playing basketball</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">E-mail:</span>
+                            <span class="member-detail-value"><a href="mailto:2969001824@qq.com">2969001824@qq.com</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+
+
+                  <!-- Member 4 --> 
+                  <div class="column one column_column">
+                    <div class="column_attr">
+                      <div class="team-member-card">
+                        <!-- 左侧照片区域 -->
+                        <div class="member-photo">
+                          <!-- 如果有照片，使用下面的代码替换 -->
+                          <img src="images/member_photo/yanzi.jpg" alt="yanzi">
+                          <!-- 如果没有照片，使用下面的占位符 -->
+                          <!-- <div class="member-photo-placeholder">生活照</div> -->
+                        </div>
+                        <!-- 右侧信息区域 -->
+                        <div class="member-info">
+                          <h2 class="member-name">Yanzi Zhang</h2>
+                          <div class="member-detail">
+                            <span class="member-detail-label">PhD student</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Major:</span>
+                            <span class="member-detail-value">Medical Systems Biology</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research area:</span>
+                            <span class="member-detail-value">Single-cell multi-omics analysis</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Hobby:</span>
+                            <span class="member-detail-value">Climbing and Drinking</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">E-mail:</span>
+                            <span class="member-detail-value"><a href="mailto:yzzhang@m.fudan.edu.cn">yzzhang@m.fudan.edu.cn</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+
+
+                  <!-- Member 4 - 示例成员 -->
+                  <div class="column one column_column">
+                    <div class="column_attr">
+                      <div class="team-member-card">
+                        <!-- 左侧照片区域 -->
+                        <div class="member-photo">
+                          <!-- 如果有照片，使用下面的代码替换 -->
+                          <img src="images/member_photo/jiashen.jpg" alt="Jiashen_Tian">
+                          <!-- 如果没有照片，使用下面的占位符 -->
+                          <!-- <div class="member-photo-placeholder">生活照</div> -->
+                        </div>
+                        
+                        <!-- 右侧信息区域 -->
+                        <div class="member-info">
+                          <h2 class="member-name">Jiashen Tian</h2>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Joint training graduate student</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Major:</span>
+                            <span class="member-detail-value">Biochemistry and Molecular Biology</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research area:</span>
+                            <span class="member-detail-value">Development of patially quantitative metabolomics technologies</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Hobby:</span>
+                            <span class="member-detail-value">Playing badminton</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">E-mail:</span>
+                            <span class="member-detail-value"><a href="mailto:aqgy2749@163.com">aqgy2749@163.com</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <!-- Member 5 - 示例成员 -->
+                  <div class="column one column_column">
+                    <div class="column_attr">
+                      <div class="team-member-card">
+                        <!-- 左侧照片区域 -->
+                        <div class="member-photo">
+                          <!-- 如果有照片，使用下面的代码替换 -->
+                          <img src="images/member_photo/yang.jpg" alt="Yang_Zhang">
+                          <!-- 如果没有照片，使用下面的占位符 -->
+                          <!-- <div class="member-photo-placeholder">生活照</div> -->
+                        </div>
+                        
+                        <!-- 右侧信息区域 -->
+                        <div class="member-info">
+                          <h2 class="member-name">Yang Zhang</h2>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Joint training graduate student</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Major:</span>
+                            <span class="member-detail-value">Clinical medicine</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research area:</span>
+                            <span class="member-detail-value">Neurosciense of gastric cancer; Crosstalk of cancer and inflammation</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Hobby:</span>
+                            <span class="member-detail-value">Playing soccer</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">E-mail:</span>
+                            <span class="member-detail-value"><a href="mailto:18115201970@163.com">18115201970@163.com</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- Member 2 - 可以复制上面的代码块添加更多成员 -->
+                  <!-- 
+                  <div class="column one column_column">
+                    <div class="column_attr">
+                      <div class="team-member-card">
+                        <div class="member-photo">
+                          <img src="images/member2.jpg" alt="成员姓名">
+                        </div>
+                        <div class="member-info">
+                          <h2 class="member-name">成员姓名</h2>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Second Year of Doctoral Studie</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Major:</span>
+                            <span class="member-detail-value">专业名称</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Research area:</span>
+                            <span class="member-detail-value">研究方向</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Hobby:</span>
+                            <span class="member-detail-value">兴趣爱好</span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">E-mail:</span>
+                            <span class="member-detail-value"><a href="mailto:email@fudan.edu.cn">email@fudan.edu.cn</a></span>
+                          </div>
+                          <div class="member-detail">
+                            <span class="member-detail-label">Website:</span>
+                            <span class="member-detail-value"><a href="https://website.com" target="_blank">https://website.com</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  -->
+
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="section the_content no_content">
+              <div class="section_wrapper">
+                <div class="the_content_wrapper"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer id="Footer" class="clearfix">
+      <div class="widgets_wrapper">
+        <div class="container">
+          <div class="column one">
+            <!-- Text Area -->
+            <aside class="widget widget_text">
+              <div class="textwidget">
+                <div style="text-align: center;">
+                  <p class="contact_icons">
+                    <a href="#"><i class="icon-facebook-circled"></i></a><a href="#"><i class="icon-gplus-circled"></i></a><a href="#"><i class="icon-twitter-circled"></i></a><a href="#"><i class="icon-pinterest-circled"></i></a><a href="#"><i class="icon-linkedin-circled"></i></a>
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <!-- Footer copyright-->
+      <div class="footer_copy">
+        <div class="container">
+          <div class="column one">
+            <div class="copyright">
+              &copy; 2025 The ZU Lab. All rights reserved.
+            </div>
+            <!--Social info area-->
+            <ul class="social"></ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+  <!-- JS -->
+  <script src="../../js/jquery-2.1.4.min.js"></script>
+
+  <script src="../../js/mfn.menu.js"></script>
+  <script src="../../js/jquery.plugins.js"></script>
+  <script src="../../js/jquery.jplayer.min.js"></script>
+  <script src="../../js/animations/animations.js"></script>
+  <script src="../../js/scripts.js"></script>
+
+  <script>
+        jQuery(window).load(function() {
+            var retina = window.devicePixelRatio > 1 ? true : false;
+            if (retina) {
+                var retinaEl = jQuery("#logo img");
+                var retinaLogoW = retinaEl.width();
+                var retinaLogoH = retinaEl.height();
+                retinaEl.attr("src", "images/simple.svg").width(retinaLogoW).height(retinaLogoH);
+                var stickyEl = jQuery("#logo img.logo-sticky");
+                var stickyLogoW = stickyEl.width();
+                var stickyLogoH = stickyEl.height();
+                stickyEl.attr("src", "images/simple.svg").width(stickyLogoW).height(stickyLogoH);
+                var mobileEl = jQuery("#logo img.logo-mobile");
+                var mobileLogoW = mobileEl.width();
+                var mobileLogoH = mobileEl.height();
+                mobileEl.attr("src", "images/simple.svg").width(mobileLogoW).height(mobileLogoH);
+            }
+        });
+  </script>
+
+</body>
+
+</html>
+
