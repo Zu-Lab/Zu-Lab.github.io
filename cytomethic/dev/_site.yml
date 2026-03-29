@@ -1,7 +1,0 @@
-name: "CytoMethIC"
-navbar:
-  title: 'CytoMethIC'
-  left:
-    - text: "Models"
-      icon: fa-book
-      href: models.html
