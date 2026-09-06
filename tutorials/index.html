@@ -1,0 +1,18 @@
+---
+layout: tutorial
+title: Tutorials
+description: Tutorials from the ZU Lab.
+---
+{% assign tutorials = site.pages | where: "tutorial", true | sort: "order" %}
+{% if tutorials.size > 0 %}
+<ul class="tutorial-list">
+  {% for tutorial in tutorials %}
+  <li>
+    <h2><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | escape }}</a></h2>
+    {% if tutorial.description %}<p>{{ tutorial.description | escape }}</p>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Tutorials are coming soon.</p>
+{% endif %}

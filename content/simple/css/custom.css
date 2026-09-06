@@ -45,3 +45,38 @@ a.mfn-link-1:after {
 		display: none;
 	}
 }
+
+.tutorial-content {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.tutorial-content img {
+	max-width: 100%;
+	height: auto;
+}
+
+.tutorial-content pre {
+	overflow-x: auto;
+	padding: 16px;
+	background: #f6f8fa;
+	color: #333;
+}
+
+.tutorial-content .highlight:not(.highlight_image) {
+	background: #f6f8fa;
+	color: #333;
+}
+
+.tutorial-content code {
+	font-family: monospace;
+}
+
+.tutorial-list {
+	list-style: none;
+	margin-left: 0;
+}
+
+.tutorial-list li {
+	margin-bottom: 24px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | escape }} | ZU Lab@Fudan</title>
+    <meta name="description" content="{{ page.description | default: page.title | escape }}">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,400italic,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans&amp;display=swap">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/content/simple/css/structure.css">
+    <link rel="stylesheet" href="/content/simple/css/simple.css">
+    <link rel="stylesheet" href="/content/simple/css/custom.css">
+  </head>
+
+  <body class="style-simple layout-full-width mobile-tb-left no-content-padding header-stack header-center minimalist-header sticky-white ab-hide subheader-both-center menuo-no-borders footer-copy-center">
+    <div id="Wrapper">
+      <div id="Header_wrapper">
+        <header id="Header">
+          <div id="Top_bar">
+            <div class="container">
+              <div class="column one">
+                <div class="top_bar_left clearfix loading">
+                  <div class="logo">
+                    <p class="zlab_caption">ZU LAB<br></p>
+                    <p>@Fudan University, School of Basic Medical Sciences</p>
+                  </div>
+                  <div class="menu_wrapper">
+                    <nav id="menu" class="menu-main-menu-container">
+                      <ul id="menu-main-menu" class="menu">
+                        <li><a href="/"><span>Home</span></a></li>
+                        <li><a href="/content/simple/publications.html"><span>Publications</span></a></li>
+                        <li><a href="/content/simple/team.html"><span>Team</span></a></li>
+                        <li class="current_page_item"><a href="/tutorials/"><span>Tutorials</span></a></li>
+                      </ul>
+                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                  </div>
+                  <div class="secondary_menu_wrapper"></div>
+                  <div class="banner_wrapper"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div id="Subheader">
+          <div class="container">
+            <div class="column one">
+              <h1 class="title">{{ page.title | escape }}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="Content">
+        <div class="content_wrapper clearfix">
+          <div class="sections_group">
+            <div class="entry-content">
+              <div class="section column-margin-30px" style="padding-top:40px; padding-bottom:40px;">
+                <div class="section_wrapper clearfix">
+                  <main class="tutorial-content">
+                    {{ content }}
+                  </main>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer id="Footer" class="clearfix">
+        <div class="footer_copy">
+          <div class="container">
+            <div class="column one">
+              <div class="copyright">&copy; 2026 The ZU Lab. All rights reserved.</div>
+              <ul class="social"></ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -3,3 +3,26 @@ Welcome to Zu lab's github pages!
 
 The template is from [[http://deanattali.com/beautiful-jekyll][beautiful-jekyll]]. We also learn a lot from Drs [[https://github.com/zhou-lab/zhou-lab.github.io][Wanding Zhou]] and [[https://github.com/sushang-thu/sushanglab.github.io][Shang Su]]'s lab github repositories.
 
+** Adding a tutorial
+
+Store each tutorial as =tutorials/<lowercase-hyphenated-name>.md=. Put its images and downloadable files in =tutorials/assets/<same-name>/=.
+
+Every tutorial starts with this front matter:
+
+#+begin_src markdown
+---
+layout: tutorial
+title: "Single-cell Analysis Tutorial"
+description: "A practical introduction to the analysis workflow."
+order: 10
+tutorial: true
+---
+
+## Introduction
+
+Start the tutorial body with a second-level heading because the layout provides the page title.
+
+![Workflow](assets/single-cell-analysis/workflow.png)
+#+end_src
+
+Use order values =10, 20, 30, ...= so tutorials can be inserted later. Always give images meaningful alternative text. GitHub Pages renders each Markdown file automatically and adds it to the Tutorials page.
