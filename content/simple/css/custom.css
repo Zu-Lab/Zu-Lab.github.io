@@ -21,3 +21,27 @@ a.mfn-link-1:after {
 	-moz-transform: translateX(-20px);
 	transform: translateX(-20px)
 }
+
+@media only screen and (max-width: 1239px) {
+	#Top_bar .menu_wrapper {
+		width: 100%;
+	}
+	#Top_bar #menu {
+		display: block;
+		position: static;
+		width: 100%;
+	}
+	#Top_bar #menu > ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		float: none;
+	}
+	#Top_bar #menu ul li {
+		width: auto;
+	}
+	/* Navigation stays visible on small screens; hide the unused JS-dependent toggle retained in HTML. */
+	#Top_bar a.responsive-menu-toggle {
+		display: none;
+	}
+}
