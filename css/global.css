@@ -3124,6 +3124,16 @@ dl>dd:after {
 }
 /* Muffin link ----------------------------------------------------------------------- */
 
+a.mfn-box-8 {
+	padding: 0 5px;
+	font-weight: 700;
+	position: relative;
+	z-index: 1
+}
+a.mfn-box-8:before,a.mfn-box-8:after {
+    pointer-events: none
+}
+
 a.mfn-link {
 	position: relative;
 	display: inline-block;
@@ -3425,19 +3435,19 @@ a.mfn-link-8:after {
 	-moz-transform: translateY(20px);
 	transform: translateY(20px)
 }
-a:hover.mfn-link-8:before, a:hover.mfn-link-8:after, a.hover.mfn-link-8:before, a.hover.mfn-link-8:after {
-	opacity: .7
-}
-a:hover.mfn-link-8:before, a.hover.mfn-link-8:before {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg)
-}
-a:hover.mfn-link-8:after, a.hover.mfn-link-8:after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg)
-}
+/* a:hover.mfn-link-8:before, a:hover.mfn-link-8:after, a.hover.mfn-link-8:before, a.hover.mfn-link-8:after { */
+/* 	opacity: .0 */
+/* } */
+/* a:hover.mfn-link-8:before, a.hover.mfn-link-8:before { */
+/* 	-webkit-transform: rotate(45deg); */
+/* 	-moz-transform: rotate(45deg); */
+/* 	transform: rotate(45deg) */
+/* } */
+/* a:hover.mfn-link-8:after, a.hover.mfn-link-8:after { */
+/* 	-webkit-transform: rotate(-45deg); */
+/* 	-moz-transform: rotate(-45deg); */
+/* 	transform: rotate(-45deg) */
+/* } */
 /* variables */
 
 a.mfn-link-4:before, a.mfn-link-4:after, a.mfn-link-3:after, a:hover.mfn-link-8:after, a:hover.mfn-link-8:before, a.hover.mfn-link-8:after, a.hover.mfn-link-8:before {
